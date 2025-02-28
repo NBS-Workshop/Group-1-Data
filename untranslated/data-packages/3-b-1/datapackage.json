@@ -12,7 +12,52 @@
         "fields": [
           {
             "name": "Year",
-            "type": "number"
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Average Proportion of Essential Drugs Available in Health Facilities by Zone and by Facility type",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Zones",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "North Central",
+                "North East",
+                "North West",
+                "South East",
+                "South South",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Facility Type",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "PHF",
+                "SHF",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Percentage %",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
